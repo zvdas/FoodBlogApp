@@ -1,0 +1,33 @@
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Message</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let blog of blogs">
+            <td>{{blog.id}}</td>
+            <td>{{blog.date}}</td>
+            <td>{{blog.title}}</td>
+            <td>{{blog.author}}</td>
+            <td>{{blog.message}}</td>
+            <td>{{blog.category}}</td>
+        </tr>
+    </tbody>
+</table>
+<hr style="border: 1px solid green;"/>
+ID: <input type="number" [(ngModel)]="blog.id"/> <br/>
+Date: <input type="date" [(ngModel)]="blog.date"/> <br/>
+Title: <input type="text" [(ngModel)]="blog.title"/> <br/>
+Author: <input type="text" [(ngModel)]="blog.author"/> <br/>
+Message: <input type="text" [(ngModel)]="blog.message"/> <br/>
+Category: <input type="text" [(ngModel)]="blog.category"/> <br/>
+<button (click)="createBlog()">create</button>
+<button (click)="clear()">clear</button>
+<hr style="border: 1px solid blue;">
+{{msg}}
