@@ -1,0 +1,9 @@
+.container{
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+}
+.logoarea{
+    /* background-image: url("https://media.istockphoto.com/photos/glowing-charcoal-briquettes-background-texture-picture-id474944786?k=20&m=474944786&s=612x612&w=0&h=pOLOTlHzUHJ2dc5uRQ7Jd2LC-oOjBnw6ki9szkkGolU="); */
+    background-image: url(../assets/istockphoto-glowing-charcoal-briquettes-background-texture.jpg);
+    color: whitesmoke;
+}

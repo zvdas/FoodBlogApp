@@ -17,32 +17,38 @@ export class BlogIndexComponent implements OnInit {
   constructor(private cjs: CrudJsonService) { }
 
   ngOnInit(): void {
+    this.getAllBlogs();
+  }
+
+  getAllBlogs(){
     this.cjs.getAllBlogs()
-      .subscribe(response => this.blogs = response);
+    .subscribe(response => this.blogs = response);
   }
 
   createBlog(){
     this.cjs.createBlog(this.blog)
-      .subscribe(response => this.msg="Course Added Successfully");
+      .subscribe(response => this.msg="Blog Added Successfully");
   }
 
   clear(){
     this.blog = new Blog();
     this.msg = '';
-    this.cjs.getAllBlogs()
-    .subscribe(response => this.blogs = response);
+    this.getAllBlogs();
   }
 
-  getBlogById(){
-
+  getBlogById(id:number){
+    this.cjs.getBlogById(id)
+      .subscribe(response => this.blog = response);
   }
 
   updateBlog(){
-
+    this.cjs.updateBlog(this.blog.id??NaN, this.blog)
+      .subscribe(response => this.msg="Blog Updated Successfully");
   }
 
-  deleteBlog(){
-
+  deleteBlog(id:number){
+    this.cjs.deleteBlog(id)
+      .subscribe(response => this.msg="Blog Deleted Successfully");
   }
 
 }

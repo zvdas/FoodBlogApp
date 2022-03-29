@@ -5,7 +5,7 @@
       "date": "2022-03-28",
       "title": "Fresh Sannas With Spicy Chicken Cafreal (Gravy)",
       "author": "Jeremiah Fernandes",
-      "message": "Enjoy a spicy green chicken curry with a delicious, smoky flavour with silky sannas, made from freshly squeezed toddy, from the most tender coconuts. ",
+      "message": "Enjoy a spicy green chicken curry with a delicious, smoky flavour with silky sannas, made from freshly squeezed toddy, from the most tender coconuts.",
       "category": "Gravy/Curry"
     },
     {
@@ -15,6 +15,22 @@
       "author": "Nancy Carneiro",
       "message": "Enjoy charcoal smoked paneer tikka smeared with fresh lime juice and garnished with fresh herbs for that sweet, roasted, delicious taste served with honey glazed onion and tomato rings, sliced to perfection.",
       "category": "Barbeque"
+    },
+    {
+      "id": 3,
+      "date": "2022-03-28",
+      "title": "Chicken Zesty Biryani with Fried Bell Peppers",
+      "author": "Leslie Rego Thompkins",
+      "message": "Savour the taste of a spicy chicken Biryani with a tangy lemon zest, cooked in a mixture of garam masala, a paste of tomato, dried red chillies, spices and vinegar and infused with roasted yellow, red and green bell peppers.",
+      "category": "Rice/Biryani"
+    },
+    {
+      "id": 4,
+      "date": "2022-03-28",
+      "title": "Golden Prawn Fry ",
+      "author": "Felicia Rodrigo",
+      "message": "Revel in the aroma of butter fried prawns, soaked in lemon juice, asparagus, spring onions and garlic bulbs, resulting in a mouth watering dish which tingles all the senses in each bite",
+      "category": "Seafood"
     }
   ]
 }
