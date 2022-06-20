@@ -1,4 +1,4 @@
-<h1><strong>Food Blog Application<strong></h1>
+<h1><strong><center>Food Blog Application</center></strong></h1>
 
 Step 1 : Create a new app by running the following command in terminal
     ng new fba_v1
