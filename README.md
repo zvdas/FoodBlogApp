@@ -1,4 +1,4 @@
-<h1><strong><center>Food Blog Application</center></strong></h1>
+<h1><strong>Food Blog Application</strong></h1>
 
 Step 1 : Create a new app by running the following command in terminal
     ng new fba_v1
@@ -60,45 +60,49 @@ Step 11 : Add the routes in the app-routing.module.ts file and add property { us
     })
 
 Step 12 : Add the objects to the blog.model.ts file
-    id?:number;
-    date?:Date;
-    title?:string;
-    author?:string;
-    message?:string;
-    category?:string;
+    export class Blog {
+        id?:number;
+        date?:Date;
+        title?:string;
+        author?:string;
+        message?:string;
+        category?:string;
 
-    constructor(id?:number, date?:Date, title?:string, author?:string, message?:string, category?:string){
-        this.id=id;
-        this.date=date;
-        this.title=title;
-        this.author=author;
-        this.message=message;
-        this.category=category;
+        constructor(id?:number, date?:Date, title?:string, author?:string, message?:string, category?:string){
+            this.id=id;
+            this.date=date;
+            this.title=title;
+            this.author=author;
+            this.message=message;
+            this.category=category;
+        }
     }
 
 Step 13 : Add the objects to the contact.model.ts file
-    Name?:string;
-    Email?:string;
-    Password?:string;
-    Phone?:number;
-    Address_Line_1?:string;
-    Address_Line_2?:string;
-    City?:string;
-    State?:string;
-    Country?:string;
-    Zip?:number;
+    export class Contact {
+        Name?:string;
+        Email?:string;
+        Password?:string;
+        Phone?:number;
+        Address_Line_1?:string;
+        Address_Line_2?:string;
+        City?:string;
+        State?:string;
+        Country?:string;
+        Zip?:number;
 
-    constructor(Name?:string, Email?:string, Password?:string, Phone?:number, Address_Line_1?:string, Address_Line_2?:string, City?:string, State?:string, Country?:string, Zip?:number){
-        this.Name = Name;
-        this.Email = Email;
-        this.Password = Password;
-        this.Phone = Phone;
-        this.Address_Line_1 = Address_Line_1;
-        this.Address_Line_2 = Address_Line_2;
-        this.City = City;
-        this.State = State;
-        this.Country = Country;
-        this.Zip = Zip;
+        constructor(Name?:string, Email?:string, Password?:string, Phone?:number, Address_Line_1?:string, Address_Line_2?:string, City?:string, State?:string, Country?:string, Zip?:number){
+            this.Name = Name;
+            this.Email = Email;
+            this.Password = Password;
+            this.Phone = Phone;
+            this.Address_Line_1 = Address_Line_1;
+            this.Address_Line_2 = Address_Line_2;
+            this.City = City;
+            this.State = State;
+            this.Country = Country;
+            this.Zip = Zip;
+        }
     }
 
 Step 14 : Import the HTTPClientModule in blog.module.ts to enable HTTPClient which can make API calls like get, post, put & delete
