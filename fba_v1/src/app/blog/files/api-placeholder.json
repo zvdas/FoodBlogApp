@@ -1,0 +1,35 @@
+{
+  "blog": [
+    {
+      "id": 1,
+      "date": "2022-06-01",
+      "title": "Laoreet suspendisse interdum consectetur",
+      "author": "libero id faucibus nisl tincidunt",
+      "message": "Commodo viverra maecenas accumsan lacus. Consequat nisl vel pretium lectus quam id. Ultrices tincidunt arcu non sodales. Dignissim convallis aenean et tortor at risus viverra. Ipsum consequat nisl vel pretium. Amet facilisis magna etiam tempor orci. Egestas sed sed risus pretium quam vulputate.",
+      "category": "Commodo viverra maecenas"
+    },
+    {
+      "id": 2,
+      "date": "2022-06-02",
+      "title": "updated : Consequat nisl vel pretium lectus quam id",
+      "author": "updated : Amet facilisis magna",
+      "message": "updated : Egestas sed sed risus pretium quam vulputate. Auctor augue mauris augue neque gravida in. Id diam maecenas ultricies mi eget. Aliquam eleifend mi in nulla posuere sollicitudin. Facilisis gravida neque convallis a cras semper auctor. Nisl vel pretium lectus quam id leo. Mi in nulla posuere sollicitudin. Sed lectus vestibulum mattis ullamcorper. Ante in nibh mauris cursus mattis.",
+      "category": "updated : Egestas sed sed"
+    }
+  ],
+  "contact": [
+    {
+      "Name": "Laoreet suspendisse",
+      "Email": "suspendisse@xscl.com",
+      "Password": "suspendisse123",
+      "Phone": 9876543210,
+      "Address_Line_1": "Interdum consectetur libero id faucibus nisl",
+      "Address_Line_2": "Ultrices tincidunt arcu non sodales",
+      "City": "Auctor",
+      "State": "Kolkata",
+      "Country": "Aliquam",
+      "Zip": 654321,
+      "id": 1
+    }
+  ]
+}
