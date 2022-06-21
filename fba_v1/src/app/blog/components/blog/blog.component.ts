@@ -11,7 +11,7 @@ import { BlogService } from '../../services/blog/blog.service';
 export class BlogComponent implements OnInit {
 
   blogs:any[] = new Array<Blog[]>();
-  blog = new Blog();
+  blog:any = new Blog();
   msg:string='';
 
   constructor(private bs: BlogService) { }
@@ -20,20 +20,17 @@ export class BlogComponent implements OnInit {
     this.getAllBlogs();
   }
 
-  getAllBlogs(){
-    this.bs.getAllBlogs()
-    .subscribe(response => this.blogs = response);
-  }
-
   createBlog(){
-      this.bs.createBlog(this.blog)
-      .subscribe(response => this.msg="Blog Added Successfully");
+      this.bs.createBlog(this.blog);
+      this.msg = "Blog created successfully";
   }
 
-  clear(){
-      this.blog = new Blog();
-      this.msg = '';
-      this.getAllBlogs();
+  getAllBlogs(){
+    this.bs.getAllBlogs().subscribe(
+      (response) => {this.blogs = response},
+      (err) => console.log(err),
+      () => console.log("completed")
+    );
   }
 
   getBlogById(id:number){
@@ -42,13 +39,19 @@ export class BlogComponent implements OnInit {
   }
 
   updateBlog(){
-      this.bs.updateBlog(this.blog.id??NaN, this.blog)
-      .subscribe(response => this.msg="Blog Updated Successfully");
+    this.bs.updateBlog(this.blog.id??NaN, this.blog);
+    this.msg="Blog Updated Successfully";
   }
 
   deleteBlog(id:number){
-      this.bs.deleteBlog(id)
-      .subscribe(response => this.msg="Blog Deleted Successfully");
+      this.bs.deleteBlog(id);
+      this.msg="Blog Deleted Successfully";
+  }
+
+  clear(){
+    this.blog = new Blog();
+    this.msg = '';
+    this.getAllBlogs();
   }
 
 }

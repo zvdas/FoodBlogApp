@@ -8,6 +8,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShowComponent } from './components/show/show.component';
+import { BlogFirestoreComponent } from './components/blog-firestore/blog-firestore.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ShowComponent } from './components/show/show.component';
     BlogComponent,
     ContactComponent,
     ErrorComponent,
-    ShowComponent
+    ShowComponent,
+    BlogFirestoreComponent
   ],
   imports: [
     CommonModule,
