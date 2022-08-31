@@ -13,7 +13,6 @@ dotenv.config({ path: './configurations/config.env' });
 const connectDB = require('./configurations/mongodb');
 
 // middleware files
-const logger = require('./middleware/logger');
 const errorHandler = require('./middleware/error');
 
 // route files
@@ -27,17 +26,14 @@ const app = express();
 app.use(express.json());
 
 // enable cors
-// app.use(cors());
-app.use(cors({ origin: process.env.ORIGIN }));
+app.use(cors());
+// app.use(cors({ origin: process.env.ORIGIN }));
 
 // connect database
 connectDB();
 
 // set static folder to serve view, logic & frontend files
 app.use(express.static(path.join(__dirname,'/views/')));
-
-// use logger
-// app.use(logger());
 
 // dev logging middleware
 if(process.env.NODE_ENV === 'development')
