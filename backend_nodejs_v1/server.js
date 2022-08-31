@@ -29,6 +29,7 @@ app.use(express.json());
 
 // enable cors
 app.use(cors());
+// app.use(cors({ origin: process.env.ORIGIN }));
 
 // connect database
 connectDB();
