@@ -8,7 +8,8 @@ import { Blog } from '../../classes/blog/blog.model';
 
 export class BlogService {
 
-  url:string ='http://localhost:3000/blog';
+  // url:string ='http://localhost:3000/blog';
+  url:string ='https://foodblogappnodejs.herokuapp.com/api/v1/blogs';
 
   constructor(private http:HttpClient) { }
 
