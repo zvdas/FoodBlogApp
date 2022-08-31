@@ -34,7 +34,7 @@ app.use(cors());
 connectDB();
 
 // use logger
-app.use(logger());
+// app.use(logger());
 
 // dev logging middleware
 if(process.env.NODE_ENV === 'development')
