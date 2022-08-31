@@ -21,8 +21,8 @@ export class BlogComponent implements OnInit {
   }
 
   createBlog(){
-      this.bs.createBlog(this.blog);
-      this.msg = "Blog created successfully";
+    this.bs.createBlog(this.blog);
+    this.msg = "Blog created successfully";
   }
 
   getAllBlogs(){

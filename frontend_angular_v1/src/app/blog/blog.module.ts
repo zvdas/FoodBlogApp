@@ -9,6 +9,8 @@ import { ErrorComponent } from './components/error/error.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShowComponent } from './components/show/show.component';
 import { BlogFirestoreComponent } from './components/blog-firestore/blog-firestore.component';
+import { ContactFirestoreComponent } from './components/contact-firestore/contact-firestore.component';
+import { ShowFirestoreComponent } from './components/show-firestore/show-firestore.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { BlogFirestoreComponent } from './components/blog-firestore/blog-firesto
     ContactComponent,
     ErrorComponent,
     ShowComponent,
-    BlogFirestoreComponent
+    BlogFirestoreComponent,
+    ContactFirestoreComponent,
+    ShowFirestoreComponent
   ],
   imports: [
     CommonModule,
