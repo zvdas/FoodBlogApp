@@ -1,26 +1,26 @@
 export class Contact {
-    Name?:string;
-    Email?:string;
-    Password?:string;
-    Phone?:number;
-    Address_Line_1?:string;
-    Address_Line_2?:string;
-    City?:string;
-    State?:string;
-    Country?:string;
-    Zip?:number;
+    name?:string;
+    email?:string;
+    password?:string;
+    phone?:number;
+    address_line_1?:string;
+    address_line_2?:string;
+    city?:string;
+    state?:string;
+    country?:string;
+    zip?:number;
 
-    constructor(Name?:string, Email?:string, Password?:string, Phone?:number, Address_Line_1?:string, Address_Line_2?:string, City?:string, State?:string, Country?:string, Zip?:number){
-        this.Name = Name;
-        this.Email = Email;
-        this.Password = Password;
-        this.Phone = Phone;
-        this.Address_Line_1 = Address_Line_1;
-        this.Address_Line_2 = Address_Line_2;
-        this.City = City;
-        this.State = State;
-        this.Country = Country;
-        this.Zip = Zip;
+    constructor(name?:string, email?:string, password?:string, phone?:number, address_line_1?:string, address_line_2?:string, city?:string, state?:string, country?:string, zip?:number){
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.phone = phone;
+        this.address_line_1 = address_line_1;
+        this.address_line_2 = address_line_2;
+        this.city = city;
+        this.state = state;
+        this.country = country;
+        this.zip = zip;
     }
     
 }

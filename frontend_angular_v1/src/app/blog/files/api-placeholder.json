@@ -19,16 +19,16 @@
   ],
   "contact": [
     {
-      "Name": "Ullamcorper Vitae",
-      "Email": "vitae@axel.com",
-      "Password": "vitae1234",
-      "Phone": 9876543210,
-      "Address_Line_1": "Ornare lectus sit amet est placerat",
-      "Address_Line_2": "Nibh tortor id aliquet lectus proin nibh",
-      "City": "Non tellus",
-      "State": "Delhi",
-      "Country": "Ornare",
-      "Zip": 654321,
+      "name": "Ullamcorper Vitae",
+      "email": "vitae@axel.com",
+      "password": "vitae1234",
+      "phone": 9876543210,
+      "address_line_1": "Ornare lectus sit amet est placerat",
+      "address_line_2": "Nibh tortor id aliquet lectus proin nibh",
+      "city": "Non tellus",
+      "state": "Delhi",
+      "country": "Ornare",
+      "zip": 654321,
       "id": 1
     }
   ]

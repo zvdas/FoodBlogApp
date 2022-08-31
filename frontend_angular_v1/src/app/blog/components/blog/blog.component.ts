@@ -29,13 +29,14 @@ export class BlogComponent implements OnInit {
     this.bs.getAllBlogs().subscribe(
       (response) => {this.blogs = response},
       (err) => console.log(err),
-      () => console.log("completed")
+      // () => console.log("completed")
+      () => console.log(this.blogs)
     );
   }
 
   getBlogById(id:number){
-      this.bs.getBlogById(id)
-      .subscribe(response => this.blog = response);
+    this.bs.getBlogById(id)
+    .subscribe(response => this.blog = response);
   }
 
   updateBlog(){
@@ -44,8 +45,8 @@ export class BlogComponent implements OnInit {
   }
 
   deleteBlog(id:number){
-      this.bs.deleteBlog(id);
-      this.msg="Blog Deleted Successfully";
+    this.bs.deleteBlog(id);
+    this.msg="Blog Deleted Successfully";
   }
 
   clear(){

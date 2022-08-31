@@ -6,60 +6,60 @@
         <div class="row my-1">
             <div class="col-md-3">
                 <label for="inputName" class="form-label">Name</label>
-                <input type="text" class="form-control" id="inputName" formControlName="Name">
-                <span class="feedback-invalid" *ngIf="contactForm.get('Name')!.invalid && contactForm.get('Name')!.touched">Please do not leave field blank</span>
+                <input type="text" class="form-control" id="inputName" formControlName="name">
+                <span class="feedback-invalid" *ngIf="contactForm.get('name')!.invalid && contactForm.get('name')!.touched">Please do not leave field blank</span>
             </div>
             <div class="col-md-3">
                 <label for="inputEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="abcd@xyz.com" formControlName="Email">
-                <span class="feedback-invalid" *ngIf="contactForm.get('Email')!.invalid && contactForm.get('Email')!.touched">Please enter a valid email address</span>
+                <input type="email" class="form-control" id="inputEmail" placeholder="abcd@xyz.com" formControlName="email">
+                <span class="feedback-invalid" *ngIf="contactForm.get('email')!.invalid && contactForm.get('email')!.touched">Please enter a valid email address</span>
             </div>
             <div class="col-md-3">
                 <label for="inputPassword" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword" formControlName="Password">
-                <span class="feedback-invalid" *ngIf="contactForm.get('Password')!.invalid && contactForm.get('Password')!.touched">Please enter a password between 8 & 15 characters</span>
+                <input type="password" class="form-control" id="inputPassword" formControlName="password">
+                <span class="feedback-invalid" *ngIf="contactForm.get('password')!.invalid && contactForm.get('password')!.touched">Please enter a password between 8 & 15 characters</span>
             </div>
             <div class="col-md-3">
                 <label for="inputPhone" class="form-label">Phone</label>
-                <input type="number" class="form-control" id="inputPhone" formControlName="Phone">
-                <span class="feedback-invalid" *ngIf="contactForm.get('Phone')!.invalid && contactForm.get('Phone')!.touched">Please enter a valid 10 digit phone number</span>
+                <input type="number" class="form-control" id="inputPhone" formControlName="phone">
+                <span class="feedback-invalid" *ngIf="contactForm.get('phone')!.invalid && contactForm.get('phone')!.touched">Please enter a valid 10 digit phone number</span>
             </div>
         </div>
         <div class="row col-md-12 my-1 px-3">
             <label for="inputAddress" class="form-label">Address Line 1</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" formControlName="Address_Line_1">
-            <span class="feedback-invalid" *ngIf="contactForm.get('Address_Line_1')!.invalid && contactForm.get('Address_Line_1')!.touched">Please do not leave field blank</span>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" formControlName="address_line_1">
+            <span class="feedback-invalid" *ngIf="contactForm.get('address_line_1')!.invalid && contactForm.get('address_line_1')!.touched">Please do not leave field blank</span>
         </div>
         <div class="row col-12 my-1 px-3">
             <label for="inputAddress2" class="form-label">Address Line 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" formControlName="Address_Line_2">
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" formControlName="address_line_2">
         </div>
         <div class="row my-1">
             <div class="col-md-3">
                 <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity" formControlName="City">
-                <span class="feedback-invalid" *ngIf="contactForm.get('City')!.invalid && contactForm.get('City')!.touched">Please do not leave field blank</span>
+                <input type="text" class="form-control" id="inputCity" formControlName="city">
+                <span class="feedback-invalid" *ngIf="contactForm.get('city')!.invalid && contactForm.get('city')!.touched">Please do not leave field blank</span>
             </div>
             <div class="col-md-3">
                 <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select" formControlName="State">
+                <select id="inputState" class="form-select" formControlName="state">
                     <option selected>Choose...</option>
                     <option>Delhi</option>
                     <option>Kolkata</option>
                     <option>Mumbai</option>
                     <option>Chennai</option>
                 </select>
-                <span class="feedback-invalid" *ngIf="contactForm.get('State')!.invalid && contactForm.get('State')!.touched">Please do not leave field blank</span>
+                <span class="feedback-invalid" *ngIf="contactForm.get('state')!.invalid && contactForm.get('state')!.touched">Please do not leave field blank</span>
             </div>
             <div class="col-md-3">
                 <label for="inputCountry" class="form-label">Country</label>
-                <input type="text" class="form-control" id="inputCountry" formControlName="Country">
-                <span class="feedback-invalid" *ngIf="contactForm.get('Country')!.invalid && contactForm.get('Country')!.touched">Please do not leave field blank</span>
+                <input type="text" class="form-control" id="inputCountry" formControlName="country">
+                <span class="feedback-invalid" *ngIf="contactForm.get('country')!.invalid && contactForm.get('country')!.touched">Please do not leave field blank</span>
             </div>
             <div class="col-md-3">
                 <label for="inputZip" class="form-label">Zip</label>
-                <input type="number" class="form-control" id="inputZip" formControlName="Zip">
-                <span class="feedback-invalid" *ngIf="contactForm.get('Zip')!.invalid && contactForm.get('Zip')!.touched">Please do not leave field blank</span>
+                <input type="number" class="form-control" id="inputZip" formControlName="zip">
+                <span class="feedback-invalid" *ngIf="contactForm.get('zip')!.invalid && contactForm.get('zip')!.touched">Please do not leave field blank</span>
             </div>
         </div>
         <div class="col-12 text-center my-3">

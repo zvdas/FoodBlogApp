@@ -2,7 +2,7 @@
     <table class="table table-bordered table-hover bg-secondary text-white">
         <thead>
             <tr>
-                <th>ID</th>
+                <th>S.No.</th>
                 <th>Date</th>
                 <th>Title</th>
                 <th>Author</th>
@@ -12,8 +12,8 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let blog of blogs">
-                <td>{{blog.id}}</td>
+            <tr *ngFor="let blog of blogs; let i = index">
+                <td>{{i+1}}</td>
                 <td>{{blog.date}}</td>
                 <td>{{blog.title}}</td>
                 <td>{{blog.author}}</td>

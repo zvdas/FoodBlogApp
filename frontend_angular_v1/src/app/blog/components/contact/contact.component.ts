@@ -15,16 +15,16 @@ export class ContactComponent implements OnInit {
   
   constructor(private fb:FormBuilder, private cfs: ContactService) {
     this.contactForm = fb.group({
-      'Name': ['', [Validators.required]],
-      'Email': ['', [Validators.required, Validators.email]],
-      'Password': ['',[Validators.required, Validators.minLength(6), Validators.maxLength(15)]],
-      'Phone': ['',[Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
-      'Address_Line_1': ['',[Validators.required]],
-      'Address_Line_2': ['',[]],
-      'City': ['',[Validators.required]],
-      'State': ['',[Validators.required]],
-      'Country': ['',[Validators.required]],
-      'Zip': ['',[Validators.required, Validators.minLength(6), Validators.maxLength(6)]]
+      'name': ['', [Validators.required]],
+      'email': ['', [Validators.required, Validators.email]],
+      'password': ['',[Validators.required, Validators.minLength(6), Validators.maxLength(15)]],
+      'phone': ['',[Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
+      'address_line_1': ['',[Validators.required]],
+      'address_line_2': ['',[]],
+      'city': ['',[Validators.required]],
+      'state': ['',[Validators.required]],
+      'country': ['',[Validators.required]],
+      'zip': ['',[Validators.required, Validators.minLength(6), Validators.maxLength(6)]]
     })
   }
 
