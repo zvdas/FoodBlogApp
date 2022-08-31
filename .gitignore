@@ -1,9 +1,9 @@
 # frontend angular environment config
-fba_v1/src/environments/environment.prod.ts
-fba_v1/src/environments/environment.ts
+frontend_angular_v1/src/environments/environment.prod.ts
+frontend_angular_v1/src/environments/environment.ts
 
 # frontend angular node modules
-fba_v1/node_modules
+frontend_angular_v1/node_modules
 
 # backend nodejs config
 backend_nodejs_v1/configurations/config.env

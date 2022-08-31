@@ -4,7 +4,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "public": "dist/fba_v1",
+    "public": "dist/frontend_angular_v1",
     "ignore": [
       "firebase.json",
       "**/.*",
