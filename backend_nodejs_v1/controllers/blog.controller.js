@@ -15,7 +15,8 @@ exports.getAllBlogs = asyncHandler(async(req, res, next) => {
 
     res
         .status(200)
-        .json({ success: true, count: blog.length, data: blog });
+        // .json({ success: true, count: blog.length, data: blog });
+        .send(blog);
 });
 
 // @desc    Get blog by id

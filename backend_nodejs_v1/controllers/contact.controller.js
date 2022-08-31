@@ -15,7 +15,8 @@ exports.getAllContacts = asyncHandler(async(req, res, next) => {
 
     res
         .status(200)
-        .json({ success: true, count: contact.length, data: contact });
+        // .json({ success: true, count: contact.length, data: contact });
+        .send(contact);
 });
 
 // @desc    Create a new contact

@@ -26,10 +26,10 @@ const ContactSchema = new mongoose.Schema({
         maxlength: 10,
         required: [true, 'Please enter a phone number']
     },
-    address_Line_1: {
+    address_line_1: {
         type: String
     },
-    address_Line_2: {
+    address_line_2: {
         type: String
     },
     city: {
