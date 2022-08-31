@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 const colors = require('colors');
 const cors = require('cors');
 const morgan = require('morgan');
+const path = require('path');
 
 // load environment variables
 dotenv.config({ path: './configurations/config.env' });
@@ -23,6 +24,7 @@ const contacts = require('./routes/contact.route');
 const app = express();
 
 // set static folder to serve view, logic & frontend files
+const path = __dirname + '/views/';
 
 // use body parser
 app.use(express.json());
@@ -33,6 +35,9 @@ app.use(cors({ origin: process.env.ORIGIN }));
 
 // connect database
 connectDB();
+
+// use static path
+app.use(express.static(path));
 
 // use logger
 // app.use(logger());
