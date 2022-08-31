@@ -23,8 +23,6 @@ const contacts = require('./routes/contact.route');
 // initialize express app
 const app = express();
 
-// const path = __dirname + '/views/';
-
 // use body parser
 app.use(express.json());
 
