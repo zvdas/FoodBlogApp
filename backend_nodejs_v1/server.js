@@ -25,6 +25,9 @@ const app = express();
 // use body parser
 app.use(express.json({ limit: '50mb' }));
 
+// parse requests of content-type - application/x-www-form-urlencoded
+app.use(express.urlencoded({ limit: '50mb', extended: true }));
+
 // enable cors
 app.use(cors());
 // app.use(cors({ origin: process.env.ORIGIN }));
