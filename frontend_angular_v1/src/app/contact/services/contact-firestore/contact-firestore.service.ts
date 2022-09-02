@@ -20,4 +20,5 @@ export class ContactFirestoreService {
   getAllContacts(){
     return this.store.collection('contact').snapshotChanges();
   }
+
 }

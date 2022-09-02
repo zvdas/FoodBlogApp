@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './blog/components/home/home.component';
+import { HomeComponent } from './shared/components/home/home.component';
 import { BlogComponent } from './blog/components/blog/blog.component';
-import { ContactComponent } from './blog/components/contact/contact.component';
-import { ShowComponent } from './blog/components/show/show.component';
-import { ErrorComponent } from './blog/components/error/error.component';
+import { ContactComponent } from './contact/components/contact/contact.component';
+import { ShowComponent } from './contact/components/show/show.component';
+import { ErrorComponent } from './shared/components/error/error.component';
 import { BlogFirestoreComponent } from './blog/components/blog-firestore/blog-firestore.component';
-import { ContactFirestoreComponent } from './blog/components/contact-firestore/contact-firestore.component';
-import { ShowFirestoreComponent } from './blog/components/show-firestore/show-firestore.component';
+import { ContactFirestoreComponent } from './contact/components/contact-firestore/contact-firestore.component';
+import { ShowFirestoreComponent } from './contact/components/show-firestore/show-firestore.component';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},

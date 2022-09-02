@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { ContactFirestoreService } from 'src/app/blog/services/contact-firestore/contact-firestore.service';
+import { ContactFirestoreService } from '../../services/contact-firestore/contact-firestore.service';
 
 @Component({
   selector: 'app-contact-firestore',

@@ -25,4 +25,5 @@ export class ContactService {
   getAllContacts(){
     return this.http.get<Contact[]>(this.url);
   }
+
 }

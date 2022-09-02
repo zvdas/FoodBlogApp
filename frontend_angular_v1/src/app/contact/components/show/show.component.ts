@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ContactService } from 'src/app/blog/services/contact/contact.service';
-import { Contact } from '../../classes/contact/contact';
+import { ContactService } from '../../services/contact/contact.service';
+import { Contact } from '../../classes/contact/contact.model';
 
 @Component({
   selector: 'app-show',

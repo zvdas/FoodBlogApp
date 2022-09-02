@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ContactFirestoreService } from 'src/app/blog/services/contact-firestore/contact-firestore.service';
-import { Contact } from '../../classes/contact/contact';
+import { Contact } from '../../classes/contact/contact.model';
+import { ContactFirestoreService } from '../../services/contact-firestore/contact-firestore.service';
 
 @Component({
   selector: 'app-show-firestore',

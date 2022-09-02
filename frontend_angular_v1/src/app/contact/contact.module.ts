@@ -6,15 +6,13 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ContactFirestoreComponent } from './components/contact-firestore/contact-firestore.component';
 import { ShowComponent } from './components/show/show.component';
 import { ShowFirestoreComponent } from './components/show-firestore/show-firestore.component';
-import { NavbarComponent } from '../blog/components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     ContactComponent,
     ContactFirestoreComponent,
     ShowComponent,
-    ShowFirestoreComponent,
-    NavbarComponent
+    ShowFirestoreComponent
   ],
   imports: [
     CommonModule,
