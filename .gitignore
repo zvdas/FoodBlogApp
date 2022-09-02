@@ -10,3 +10,4 @@ backend_nodejs_v1/configurations/config.env
 
 # backend node modules
 backend_nodejs_v1/node_modules
+frontend_angular_v1/.firebase/*
