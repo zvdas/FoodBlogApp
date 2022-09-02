@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth-firestore/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 
 export class NavbarComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private fas: AuthService) { }
 
   ngOnInit(): void {
   }
@@ -28,6 +29,11 @@ export class NavbarComponent implements OnInit {
 
   goToShow(){
     this.router.navigate(['/show']);
+  }
+
+  onLogout(){
+    this.fas.logout();
+    this.router.navigate(['/home']);
   }
 
 }
