@@ -11,14 +11,16 @@ import { ShowFirestoreComponent } from './blog/components/show-firestore/show-fi
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
+  /*
   {path:'blog', component:BlogComponent},
   {path:'contact', component:ContactComponent},
   {path:'show', component:ShowComponent},
-  /*
+  */
+  // /*
   {path:'blog', component:BlogFirestoreComponent},
   {path:'contact', component:ContactFirestoreComponent},
   {path:'show', component:ShowFirestoreComponent},
-  */
+  // */
   {path:'', redirectTo:'/home', pathMatch:'full'},
   {path:'**', component:ErrorComponent}
 ];

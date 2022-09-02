@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { Contact } from '../../classes/contact/contact.model';
-import { ContactFirestoreService } from '../../services/contact-firestore/contact-firestore.service';
+import { ContactFirestoreService } from 'src/app/blog/services/contact-firestore/contact-firestore.service';
+import { Contact } from '../../classes/contact/contact';
 
 @Component({
   selector: 'app-show-firestore',
   templateUrl: './show-firestore.component.html',
   styleUrls: ['./show-firestore.component.css']
 })
+
 export class ShowFirestoreComponent implements OnInit {
-  
+
   contacts = new Array<Contact>();
 
   constructor(private cfs: ContactFirestoreService) { }
@@ -24,5 +25,5 @@ export class ShowFirestoreComponent implements OnInit {
       () => console.log("completed")
     )
   }
-
+  
 }

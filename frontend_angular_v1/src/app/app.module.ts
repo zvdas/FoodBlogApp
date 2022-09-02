@@ -8,6 +8,7 @@ import { BlogModule } from './blog/blog.module';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from 'src/environments/environment.prod';
+import { ContactModule } from './contact/contact.module';
 
 @NgModule({
   declarations: [
@@ -16,9 +17,10 @@ import { environment } from 'src/environments/environment.prod';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BlogModule
-    // AngularFireModule.initializeApp(environment.firebaseConfig),
-    // AngularFirestoreModule
+    BlogModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    ContactModule
   ],
   providers: [],
   bootstrap: [AppComponent]

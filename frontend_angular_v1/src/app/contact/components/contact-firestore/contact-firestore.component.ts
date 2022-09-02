@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { ContactService } from '../../services/contact/contact.service';
+import { ContactFirestoreService } from 'src/app/blog/services/contact-firestore/contact-firestore.service';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  selector: 'app-contact-firestore',
+  templateUrl: './contact-firestore.component.html',
+  styleUrls: ['./contact-firestore.component.css']
 })
 
-export class ContactComponent implements OnInit {
+export class ContactFirestoreComponent implements OnInit {
 
   msg:string="";
   contactForm:any;
-  
-  constructor(private fb:FormBuilder, private cfs: ContactService) {
+
+  constructor(private fb:FormBuilder, private cfs: ContactFirestoreService) { 
     this.contactForm = fb.group({
       'name': ['', [Validators.required]],
       'email': ['', [Validators.required, Validators.email]],
